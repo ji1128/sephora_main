@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* 웹폰트 CSS */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,900');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+@font-face {
+    font-family: aGothic;
+    src: url(../font/aGothic/a고딕10.woff) font-weight-100 font-weight-lighter,
+        url(../font/aGothic/a고딕11.woff) font-weight-200,
+        url(../font/aGothic/a고딕12.woff) font-weight-300 font-weight-normal,
+        url(../font/aGothic/a고딕13.woff) font-weight-400,
+        url(../font/aGothic/a고딕14.woff) font-weight-500,
+        url(../font/aGothic/a고딕15.woff) font-weight-600 font-weight-bold,
+        url(../font/aGothic/a고딕16.woff) font-weight-700 font-weight-bolder,
+        url(../font/aGothic/a고딕17.woff) font-weight-800,
+        url(../font/aGothic/a고딕18.woff) font-weight-900;
+}
+
+@font-face {
+    font-family: roxie;
+    src: url(../font/Roxie-rossa.woff);
+}
+
+
+/* CSS 초기화 */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: 'Noto Sans KR', '나눔고딕', aGothic , DroidSans, AppleSDGothicNeo, Sans-serif, Helvetica;
+    line-height: 1;
+    color: #030102;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul,
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #030102;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    color: #3f51b5;
+    font-family: 'Noto Sans KR', '나눔고딕';
+    font-size: 12px;
+    vertical-align: top;
+    border-radius: 0;
+    box-sizing: content-box;
+    appearance: none;
+}
+
+::-moz-input-placeholder,
+::-moz-textarea-placeholder {
+    color: #3f51b5;
+}
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder {
+    color: #3f51b5;
+}
