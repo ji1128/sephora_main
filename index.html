@@ -6,612 +6,530 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sephora</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- 파비콘 설정 -->
+    <link rel="shorcut icon" href="images/favicon/sephora-favicon.ico">
+
+    <!-- 브라우저 초기화 reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.5.1/css/reset.min.css">
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
 
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- Goggle Material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <!--favicon-->
-    <link rel="shorcut icon" href="images/favicon/sephora-favicon.ico">
-    
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- javascript -->
+
 </head>
 
 <body>
-    <!-- header 170px -->
-    <div id="skip-nav">
-        <ul id="left-skip">
-            <li>
-                <input id="search-search" type="search" name="q" aria-label="Search through site content">
-                <input id="search-image" type="image" src="images/icon/search.png" alt="search" width="15" height="15">
-            </li>
-            <li><a href="#">매장찾기
-                    <!-- <img src="images/icon/find_store.png" alt="find-store"> -->
-                </a>
-            </li>
-        </ul>
-        <ul id="right-skip">
-            <li><a href="#">로그인/회원가입
-                    <!-- <img src="images/icon/login.png" alt="login"> -->
-                </a>
-            </li>
-            <li><a href="#">내 쇼핑백
-                    <!-- <img src="images/icon/shopping.png" alt="shoping"> -->
-                </a>
-            </li>
-        </ul>
-    </div>
+    <div class="container">
+        <header>
+            <div class="inner">
+                <h1><a href="/" class="logo">
+                        <img src="images/common/top-logo.png" alt="sephora">
+                    </a></h1>
 
-    <header>
-        <div class="header-in">
-            <div class="nav-bg"></div>
-            <h1><a href="index.html"><img src="images/common/top-logo.png" alt="Sephora"></a></h1>
-            <nav>
-                <ul id="gnb">
-                    <li><a href="#">신제품</a></li>
-                    <li><a href="#">메이크업</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu active">
-                                <li><a href="#">아이</a></li>
-                                <li><a href="#">페이스</a></li>
-                                <li><a href="#">립</a></li>
-                                <li><a href="#">네일</a></li>
-                                <li><a href="#">메이크업 리무버</a></li>
+                <!-- PC -->
+                <div class="gnb-pc">
+                    <!-- 상단 sub-menu -->
+                    <div class="subMenu">
+                        <ul id="left-skip">
+                            <li>
+                                <input id="search-search" type="search" name="q"
+                                    aria-label="Search through site content">
+                                <input id="search-image" type="image" src="images/icon/search.png" alt="search"
+                                    width="15" height="15">
+                            </li>
+                            <li><a href="javascript:void(0)">매장찾기</a></li>
+                        </ul>
+
+                        <ul id="right-skip">
+                            <li><a href="javascript:void(0)">로그인/회원가입</a></li>
+                            <li><a href="javascript:void(0)">장바구니</a></li>
+                            <li><a href="javascript:void(0)">마이페이지</a></li>
+                            <li><a href="javascript:void(0)">고객센터</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- main-menu -->
+                    <div class="mainMenu">
+                        <nav>
+                            <ul class="main-menu">
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">신제품</div>
+
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">메이크업</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">아이</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">아이라이너</a></li>
+                                                        <li><a href="javascript:void(0)">아이 팔레트 & 세트</a></li>
+                                                        <li><a href="javascript:void(0)">아이섀도우</a></li>
+                                                        <li><a href="javascript:void(0)">아이브로우</a></li>
+                                                        <li><a href="javascript:void(0)">마스카라</a></li>
+                                                        <li><a href="javascript:void(0)">인조 속눈썹</a></li>
+                                                        <li><a href="javascript:void(0)">아이프라이머</a></li>
+                                                        <li><a href="javascript:void(0)">언더 아이 프라이머</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">페이스</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">컨투어</a></li>
+                                                        <li><a href="javascript:void(0)">페이스 프라이머</a></li>
+                                                        <li><a href="javascript:void(0)">하이라이터 & 일루미네이터</a></li>
+                                                        <li><a href="javascript:void(0)">페이스 팔레트 & 세트</a></li>
+                                                        <li><a href="javascript:void(0)">파운데이션</a></li>
+                                                        <li><a href="javascript:void(0)">틴티드 모이스처라이저</a></li>
+                                                        <li><a href="javascript:void(0)">BB & CC크림</a></li>
+                                                        <li><a href="javascript:void(0)">파우더</a></li>
+                                                        <li><a href="javascript:void(0)">컨실러 & 코렉터</a></li>
+                                                        <li><a href="javascript:void(0)">블러쉬</a></li>
+                                                        <li><a href="javascript:void(0)">브론저</a></li>
+                                                        <li><a href="javascript:void(0)">세팅 & 피니싱 스프레이</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">립</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">립 팔레트 & 세트</a></li>
+                                                        <li><a href="javascript:void(0)">립스틱</a></li>
+                                                        <li><a href="javascript:void(0)">립 스테인 & 팁트</a></li>
+                                                        <li><a href="javascript:void(0)">립글로스</a></li>
+                                                        <li><a href="javascript:void(0)">립라이너</a></li>
+                                                        <li><a href="javascript:void(0)">립밤</a></li>
+                                                        <li><a href="javascript:void(0)">립 플럼퍼</a></li>
+                                                        <li><a href="javascript:void(0)">립 프라이머</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">네일</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">네일 컬러</a></li>
+                                                        <li><a href="javascript:void(0)">베이스 & 탑 코트</a></li>
+                                                        <li><a href="javascript:void(0)">네일 아트</a></li>
+                                                        <li><a href="javascript:void(0)">네일 트리트먼트</a></li>
+                                                        <li><a href="javascript:void(0)">네일 리무버</a></li>
+                                                        <li><a href="javascript:void(0)">네일 세트</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">메이크업 리무버</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">아이 & 립</a></li>
+                                                        <li><a href="javascript:void(0)">페이스</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">스킨케어</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">클렌저 & 각질 제거제</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">페이스 클렌저</a></li>
+                                                        <li><a href="javascript:void(0)">기름종이</a></li>
+                                                        <li><a href="javascript:void(0)">스크럽 & 각질 제거제</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">토너</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">모이스처라이저</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">나이트 크림</a></li>
+                                                        <li><a href="javascript:void(0)">페이셜 미스트</a></li>
+                                                        <li><a href="javascript:void(0)">넥 & 어깨 라인 크림</a></li>
+                                                        <li><a href="javascript:void(0)">데이 모이스처라이저</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">마스크 & 트리트먼트</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">마스크 & 팩</a></li>
+                                                        <li><a href="javascript:void(0)">필링</a></li>
+                                                        <li><a href="javascript:void(0)">페이스 오일</a></li>
+                                                        <li><a href="javascript:void(0)">세럼 & 부스터</a></li>
+                                                        <li><a href="javascript:void(0)">아이케어</a></li>
+                                                        <li><a href="javascript:void(0)">립케어</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">선케어</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">페이스 선케어</a></li>
+                                                        <li><a href="javascript:void(0)">셀프 태닝</a></li>
+                                                        <li><a href="javascript:void(0)">애프터 선케어</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">스킨케어세트</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">헤어</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">샴푸 & 컨디셔너</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">샴푸</a></li>
+                                                        <li><a href="javascript:void(0)">드라이 샴푸</a></li>
+                                                        <li><a href="javascript:void(0)">컨디셔너</a></li>
+                                                        <li><a href="javascript:void(0)">리브인 컨디셔너</a></li>
+                                                        <li><a href="javascript:void(0)"></a></li>
+                                                        <li><a href="javascript:void(0)"></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">스타일링</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">열 손상 보호</a></li>
+                                                        <li><a href="javascript:void(0)">헤어 스프레이</a></li>
+                                                        <li><a href="javascript:void(0)">헤어 크림</a></li>
+                                                        <li><a href="javascript:void(0)">무스</a></li>
+                                                        <li><a href="javascript:void(0)">왁스 & 젤</a></li>
+                                                        <li><a href="javascript:void(0)">텍스처라이저</a></li>
+                                                        <li><a href="javascript:void(0)">볼류마이저</a></li>
+                                                        <li><a href="javascript:void(0)">헤어 컬러</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">도구 & 브러시</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">브러시</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">페이스 브러시</a></li>
+                                                        <li><a href="javascript:void(0)">아이 브러시</a></li>
+                                                        <li><a href="javascript:void(0)">립 브러시</a></li>
+                                                        <li><a href="javascript:void(0)">다용도 브러시</a></li>
+                                                        <li><a href="javascript:void(0)">브러시 세트</a></li>
+                                                        <li><a href="javascript:void(0)">브러시 클리너</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">스폰지 & 어플리케이터</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">스폰지</a></li>
+                                                        <li><a href="javascript:void(0)">파우더 퍼프</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">메이크업 액세서리</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">트위저 & 브로우</a></li>
+                                                        <li><a href="javascript:void(0)">뷰러</a></li>
+                                                        <li><a href="javascript:void(0)">펜슬 샤프너</a></li>
+                                                        <li><a href="javascript:void(0)">거울</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">매니큐어 & 페디큐어</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">손톱깎이</a></li>
+                                                        <li><a href="javascript:void(0)">네일 파일 & 버퍼</a></li>
+                                                        <li><a href="javascript:void(0)">가위</a></li>
+                                                        <li><a href="javascript:void(0)">페디큐어 툴</a></li>
+                                                        <li><a href="javascript:void(0)">매니큐어 & 페디큐어 세트</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">헤어도구</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">브러시</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">뷰티 디바이스</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">메이크업</a></li>
+                                                        <li><a href="javascript:void(0)">스킨케어</a></li>
+                                                        <li><a href="javascript:void(0)">구강 케어</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">백 & 오거나이저</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">메이크업 파우치</a></li>
+                                                        <li><a href="javascript:void(0)">프로페셔널 케이스</a></li>
+                                                        <li><a href="javascript:void(0)">팔레트 공용기</a></li>
+                                                        <li><a href="javascript:void(0)">공용기</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">향수</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">여성용</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">남성용</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">홈 프래그런스</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">배스 & 바디</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">배스 & 샤워</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">바디 워시</a></li>
+                                                        <li><a href="javascript:void(0)">입욕 제품</a></li>
+                                                        <li><a href="javascript:void(0)">바디 각질 제거제</a></li>
+                                                        <li><a href="javascript:void(0)">바디 스폰지</a></li>
+                                                        <li><a href="javascript:void(0)">핸드 워시</a></li>
+                                                        <li><a href="javascript:void(0)">배스 & 샤워 세트</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">모이스처라이저</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">바디</a></li>
+                                                        <li><a href="javascript:void(0)">핸드 크림</a></li>
+                                                        <li><a href="javascript:void(0)">풋크림</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">그루밍</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">데오드란트</a></li>
+                                                        <li><a href="javascript:void(0)">제모</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">트리트먼트</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">셀룰라이트 & 튼살</a></li>
+                                                        <li><a href="javascript:void(0)">컨투어링 & 스컬프팅</a></li>
+                                                        <li><a href="javascript:void(0)">맘 & 베이비</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">선케어</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">자외선 차단</a></li>
+                                                        <li><a href="javascript:void(0)">셀프 태닝</a></li>
+                                                        <li><a href="javascript:void(0)">애프터 선케어</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">기프트</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">기프트 추천</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">여성용</a></li>
+                                                        <li><a href="javascript:void(0)">남성용</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">브랜드</div>
+                                </li>
+                                <li class="item">
+                                    <!-- 1차메뉴 -->
+                                    <div class="item__name">세일</div>
+                                    <!-- 2차메뉴 -->
+                                    <div class="item__contents">
+                                        <div class="contents__menu">
+                                            <!--  1단 -->
+                                            <ul class="inner">
+                                                <!-- 2차 -->
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">세일</a></h4>
+                                                    <!-- 3차 -->
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">메이크업</a></li>
+                                                        <li><a href="javascript:void(0)">스킨케어</a></li>
+                                                        <li><a href="javascript:void(0)">헤어</a></li>
+                                                        <li><a href="javascript:void(0)">도구 & 브러시</a></li>
+                                                        <li><a href="javascript:void(0)">향수</a></li>
+                                                        <li><a href="javascript:void(0)">배스 & 바디</a></li>
+                                                        <li><a href="javascript:void(0)">기프트</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">스킨케어</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">클렌저 & 각질 제거제</a></li>
-                                <li><a href="#">토너</a></li>
-                                <li><a href="#">모이스처라이저</a></li>
-                                <li><a href="#">마스크 & 트리트먼트</a></li>
-                                <li><a href="#">선케어</a></li>
-                                <li><a href="#">스킨케어세트</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">헤어</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">샴푸 & 컨디셔너</a></li>
-                                <li><a href="#">스타일링</a></li>
-                                <li><a href="#">트리트먼트</a></li>
-                                <li><a href="#">헤어 케어 세트</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="#">도구 & 브러쉬</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">브러시</a></li>
-                                <li><a href="#">스폰지 & 어플리케이터</a></li>
-                                <li><a href="#">메이크업 액세서리</a></li>
-                                <li><a href="#">매니큐어 & 페디큐어</a></li>
-                                <li><a href="#">헤어도구</a></li>
-                                <li><a href="#">뷰티디바이스</a></li>
-                                <li><a href="#">백 & 오거나이저</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="#">향수</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">여성용</a></li>
-                                <li><a href="#">남성용</a></li>
-                                <li><a href="#">홈 프래그런스</a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="#">베스 & 바디</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">배스 & 샤워</a></li>
-                                <li><a href="#">모이스처라이저</a></li>
-                                <li><a href="#">그루밍</a></li>
-                                <li><a href="#">트리트먼트</a></li>
-                                <li><a href="#">선케어</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="#">기프트</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">기프트 추천</a></li>
-                                <li><a href="#">여성용</a></li>
-                                <li><a href="#">남성용</a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="#">브랜드</a></li>
-
-                    <li><a href="#">세일</a>
-                        <div>
-                            <!-- <img src="images/nav/nav01.jpg" alt="nav"> -->
-                            <ul class="submenu">
-                                <li><a href="#">세일</a></li>
-                                <li><a href="#">메이크업</a></li>
-                                <li><a href="#">스킨케어</a></li>
-                                <li><a href="#">헤어</a></li>
-                                <li><a href="#">도구 & 브러시</a></li>
-                                <li><a href="#">향수</a></li>
-                                <li><a href="#">배스 & 바디</a></li>
-                                <li><a href="#">기프트</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <div id="section-wrap">
-        <!-- Bx slide -->
-        <section id="slide" class="section0">
-            <h2 class="hidden">BX slider -> https://bxslider.com/ </h2>
-            <div class="bxslider">
-                <div><a href="#"><img src="images/common/slide01.png" alt="slide"></a></div>
-                <div><a href="#"><img src="images/common/slide02.png" alt="slide"></a></div>
-                <div><a href="#"><img src="images/common/slide03.png" alt="slide"></a></div>
-            </div>
-        </section>
-
-        <!-- 광고 banner 220px -->
-        <section id="banner" class="section1">
-            <h2 class="hidden">광고 banner</h2>
-            <div class="banner-box">
-                <div class="banner-box1">
-                    <p><span>뷰티 패스</span> 회원이 되시고 혜택을 받아보세요. </p>
-                    <a href="#">회원가입</a>
+                        </nav>
+                    </div>
                 </div>
-                <div class="banner-box2">
-                    <p>
-                        <span>이미 회원이신가요?</span> <br>
+            </div>
+        </header>
+
+        <div id="section-wrap">
+            <!-- main slider -->
+            <section class="main-slider">
+                <h2 class="hidden">swiper slider</h2>
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+
+            <!-- 광고 banner 220px -->
+            <section id="banner" class="section1">
+                <h2 class="hidden">광고 banner</h2>
+                <div class="banner-box">
+                    <div class="banner-box1">
+                        <p><span>뷰티 패스</span> 회원이 되시고 혜택을 받아보세요. </p>
+                        <a href="javascript:void(0)">회원가입</a>
+                    </div>
+                    <div class="banner-box2">
+                        <p>
+                            <span>이미 회원이신가요?</span> <br>
                         로그인하시고 더 편리하게 사이트를 이용해 <br>
                         보세요.
-                    </p>
-                    <a href="#">로그인</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- New at Sephora 1000px -->
-        <section id="new-items" class="section2">
-            <div class="new-box">
-                <h2>#NEW at SEPHORA</h2>
-                <div>
-                    <div class="new1">
-                        <a href="#">
-                            <img src="images/items/new_item1.png" alt="new-items">
-                            <p>ONE/SIZE</p>
-                            <p>턴업 더 베이스 벌사타일 <br>
-                                파운데이션 파우더</p>
-                            <span>구매하기</span>
-                        </a>
-                    </div>
-                    <div class="new2">
-                        <a href="#"><img src="images/items/new_item2.png" alt="new-items">
-                            <p>Maison Margiela</p>
-                            <p>레플리카 재즈 클럽 캔들</p>
-                            <span>구매하기</span>
-                        </a>
-                    </div>
-                    <div class="new3">
-                        <a href="#">
-                            <img src="images/items/new_item3.png" alt="new-items">
-                            <p>FENTY beauty</p>
-                            <p>글로스 밤 딥 클립<br>
-                                온 립글로스 루미나이저
-                            </p>
-                            <span>구매하기</span>
-                        </a>
+                        </p>
+                        <a href="javascript:void(0)">로그인</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- New at Sephora 1350px -->
+            <section></section>
 
 
-        <!-- Most Loved Items 620px -->
-        <section id="most-items" class="section3">
-            <h2>#Most Loved Items</h2>
-            <div class="most-box">
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item1.png" alt="most-items">
-                        <p><strong>메종 마르지엘라</strong></p>
-                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                        <p>89,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item2.png" alt="most-items">
-                        <p><strong>로에베</strong></p>
-                        <p>로에베 001 맨 오 드 퍼퓸</p>
-                        <p>128,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item3.png" alt="most-items">
-                        <p><strong>트렁크엘리펀트</strong></p>
-                        <p>라라 레트로 휩 크림</p>
-                        <p>78,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item4.png" alt="most-items">
-                        <p><strong>논픽션</strong></p>
-                        <p>논픽션 상탈크림 오드퍼퓸 30ML</p>
-                        <p>59,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item5.png" alt="most-items">
-                        <p><strong>리튼온워터</strong></p>
-                        <p>뉴데이 리퀴드 핸드워시</p>
-                        <p>25,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item6.png" alt="most-items">
-                        <p><strong>포레오</strong></p>
-                        <p>루나3 민감성 피부</p>
-                        <p>250,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item7.png" alt="most-items">
-                        <p><strong>아나스타샤 베버리 힐즈</strong></p>
-                        <p>브로우 위즈</p>
-                        <p>33,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item8.png" alt="most-items">
-                        <p><strong>펜티 뷰티</strong></p>
-                        <p>이즈 드롭 블러링 스킨 틴트</p>
-                        <p>45,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item9.png" alt="most-items">
-                        <p><strong>메종 마르지엘라</strong></p>
-                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                        <p>89,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/most_item10.png" alt="most-items">
-                        <p><strong>로에베</strong></p>
-                        <p>로에베 001 맨 오 드 퍼퓸</p>
-                        <p>128,000원</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- 하단 fixed 영역 800px -->
-        <section id="block-slide" class="section4">
-            <div class="block-box">
-
-                    <a href="#">
-                        <img src="images/common/block-txt.png" alt="block">
-                    </a>
-                    <a href="#">
-                        <p>자세히 보기</p>
-                    </a>
-
-            </div>
-        </section>
+        </div>
 
 
 
-        <!-- Sephora Pick 620px -->
-        <section id="pick-items" class="section5">
-            <h2>#Sephora Pick!</h2>
-            <div class="pick-box">
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item1.png" alt="pick-items">
-                        <p><strong>커리쉴</strong></p>
-                        <p>루트 레미디 스칼프 트리트먼트</p>
-                        <p>8,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item2.png" alt="pick-items">
-                        <p><strong>커리쉴</strong></p>
-                        <p>퍼펙션 컬크림</p>
-                        <p>25,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item3.png" alt="pick-items">
-                        <p><strong>커리쉴</strong></p>
-                        <p>바바수오일</p>
-                        <p>45,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item4.png" alt="pick-items">
-                        <p><strong>커리쉴</strong></p>
-                        <p>모이스처 카밍 샴푸</p>
-                        <p>21,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item5.png" alt="pick-items">
-                        <p><strong>커리쉴</strong></p>
-                        <p>루트 레미디 스칼프 토닉</p>
-                        <p>28,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item6.png" alt="pick-items">
-                        <p><strong>메종 마르지엘라 </strong></p>
-                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                        <p>89,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item7.png" alt="pick-items">
-                        <p><strong>엔시피</strong></p>
-                        <p>301 자스민 & 샌달우드</p>
-                        <p>108,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item8.png" alt="pick-items">
-                        <p><strong>반클리프 아펠</strong></p>
-                        <p>반클리프 아펠 꼴렉씨옹 네롤리 아마라 EDP 75ml</p>
-                        <p>198,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item9.png" alt="pick-items">
-                        <p><strong>로에베</strong></p>
-                        <p>로에베 001 맨 오 드 뚜왈렛</p>
-                        <p>120,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/pick_item10.png" alt="pick-items">
-                        <p><strong>반클리프 아펠</strong></p>
-                        <p>반클리프 아펠 꼴렉씨옹 가드니아 페탈 EDP 75ml</p>
-                        <p>198,000원</p>
-                    </a>
-                </div>
-            </div>
-        </section>
 
-        <section id="only-items" class="section6">
-            <h2>#Only at SEPHORA</h2>
-            <div class="only-box">
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item1.png" alt="only-items">
-                        <p><strong>원/사이즈</strong></p>
-                        <p>고 오프 메이크업 리무버 와이프스</p>
-                        <p>12,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item2.png" alt="only-items">
-                        <p><strong>원/사이즈</strong></p>
-                        <p>비저너리 아이섀도우 팔레트</p>
-                        <p>60,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item3.png" alt="only-items">
-                        <p><strong>펜티 뷰티</strong></p>
-                        <p>레스팅 피치 페이스 크림 블러쉬 & 미니 글로스 밤 크림 듀오</p>
-                        <p>36,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item4.png" alt="only-items">
-                        <p><strong>누드스틱스</strong></p>
-                        <p>헤븐 & 어스 키트</p>
-                        <p>105,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item5.png" alt="only-items">
-                        <p><strong>타르트</strong></p>
-                        <p>마라쿠자 틴티드 하이드레이터</p>
-                        <p>40,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item6.png" alt="only-items">
-                        <p><strong>펜티 뷰티</strong></p>
-                        <p>다이아몬드 밤 트리플 드 립 올 오버 다이아몬드 베일 팔레트</p>
-                        <p>59,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item7.png" alt="only-items">
-                        <p><strong>타르트</strong></p>
-                        <p>비지 갈 골 아이 & 치크 팔레트</p>
-                        <p>38,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item8.png" alt="only-items">
-                        <p><strong>누드스틱스</strong></p>
-                        <p>마그네틱 립 플러쉬 페인트</p>
-                        <p>38,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item9.png" alt="only-items">
-                        <p><strong>누드스틱스</strong></p>
-                        <p>크림 립+치크 펜슬</p>
-                        <p>36,000원</p>
-                    </a>
-                </div>
-                <div class="items-box">
-                    <a href="#">
-                        <img src="images/items/only_item10.png" alt="only-items">
-                        <p><strong>누드스틱스</strong></p>
-                        <p>누디스 틴티드 블러 스틱</p>
-                        <p>42,000원</p>
-                    </a>
-                </div>
 
-            </div>
-        </section>
 
-        <!-- SNS 600px -->
-        <section id="sns" class="section7">
-            <p>포스팅을 확인해보세요</p>
-            <h3>@sephorakr</h3>
-            <div class="sns-box">
-                <div><a href="#"><img src="images/sns/SNS1.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS2.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS3.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS4.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS5.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS6.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS7.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS8.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS9.png" alt="sns"></a></div>
-                <div><a href="#"><img src="images/sns/SNS10.png" alt="sns"></a></div>
-            </div>
-        </section>
+
+
+
+
 
     </div>
 
-    <footer>
-        <div id="footer-box">
-            <div id="left-footer">
-                <div id="customer" class="footer-box">
-                    <h5>고객센터</h5>
-                    <nav>
-                        <ul>
-                            <li><a href="#">배송</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">뷰티 서비스 예약</a></li>
-                            <li><a href="#">매장 찾기</a></li>
-                            <li><a href="#">문의</a></li>
-                        </ul>
-                    </nav>
-                    <p>
-                        서울 용산구 원효로 90길 11 <br>
-                        전화번호 : 1670-4234 <br>
-                        업무 시간: 9:00am - 6:00pm <br>
-                        이메일 : contact@sephora.kr
-                    </p>
-                </div>
-    
-                <div id="company" class="footer-box">
-                    <h5>회사 소개</h5>
-                    <nav>
-                        <ul>
-                            <li><a href="#">세포라 소개</a></li>
-                            <li><a href="#">채용</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">인터내셔널</a></li>
-                            <li><a href="#">사이트맵</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    
-                <div id="link" class="footer-box">
-                    <h5>LINKS</h5>
-                    <nav>
-                        <ul>
-                            <li><a href="#">사업자정보확인</a></li>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">이용안내</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    
-                <div id="sns-link" class="footer-box">
-                    <h5>SNS</h5>
-                    <ul>
-                        <li><a href="#"><img src="images/icon/facebook.png" alt="facebook"></a></li>
-                        <li><a href="#"><img src="images/icon/instagram.png" alt="instagram"></a></li>
-                        <li><a href="#"><img src="images/icon/tumblr.png" alt="tumblr"></a></li>
-                    </ul>
-                </div>
-            </div>
-    
-    
-            <div id="right-footer">
-                <h4><img src="images/common/bottom-logo.png" alt="bottom-logo"></h4>
-                <address>
-                    세포라코리아 유한회사 <br>
-                    서울시 강남구 테헤란로 419 | 대표자: 알리아니갓고리 <br>
-                    <br>
-                    사업자등록번호: 741-81-01206 | 통신판매업신고: 제 2019-서울강남-04152호 <br>
-                    <br>
-                    사업자 정보확인 <br>
-                    Copyright &copy; 2022 Sephora Korea Co.,Ltd. All Rights Reserved
-                </address>
-            </div>
-        </div>
 
-    </footer>
-
-
-
-
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
