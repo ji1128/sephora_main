@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+@font-face {
+    font-family: roxie;
+    src: url(../font/Roxie-rossa.woff);
+}
+
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 /* font-family: aGothic */
@@ -9,27 +14,14 @@
 
 /* font-family : roxie */
 
-body{
+/* =============common============= */
+body {
     color: #000;
     font-size: 16px;
     line-height: 1.4;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
