@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.5.1/css/reset.min.css">
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
 
     <!-- Goggle Material icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <!-- swiper -->
+    <!-- bxslider ( + jquery cdn ) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- swiper slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- scroll Magic -->
@@ -25,7 +30,7 @@
         integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 
     <!-- javascript -->
     <script defer src="js/script.js"></script>
@@ -45,7 +50,7 @@
                         </li>
                         <li><a href="javascript:void(0)">매장찾기</a></li>
                     </ul>
-    
+
                     <ul id="right-skip">
                         <li><a href="javascript:void(0)">로그인 / 회원가입</a></li>
                         <li><a href="javascript:void(0)">장바구니</a></li>
@@ -70,7 +75,6 @@
                                 <li class="item">
                                     <!-- 1차메뉴 -->
                                     <div class="item__name">신제품</div>
-
                                 </li>
                                 <li class="item">
                                     <!-- 1차메뉴 -->
@@ -79,7 +83,7 @@
                                     <div class="item__contents">
                                         <div class="contents__menu">
                                             <!--  1단 -->
-                                            <ul class="nav__inner">
+                                            <ul class="inner">
                                                 <!-- 2차 -->
                                                 <li>
                                                     <h4><a href="javascript:void(0)">아이</a></h4>
@@ -341,10 +345,10 @@
                                             <ul class="inner">
                                                 <!-- 2차 -->
                                                 <li>
-                                                    <h4><a href="javascript:void(0)">여성용</a></h4>
+                                                    <h4><a href="javascript:void(0)">여성용 향수</a></h4>
                                                 </li>
                                                 <li>
-                                                    <h4><a href="javascript:void(0)">남성용</a></h4>
+                                                    <h4><a href="javascript:void(0)">남성용 향수</a></h4>
                                                 </li>
                                                 <li>
                                                     <h4><a href="javascript:void(0)">홈 프래그런스</a></h4>
@@ -423,13 +427,12 @@
                                             <ul class="inner">
                                                 <!-- 2차 -->
                                                 <li>
-                                                    <h4><a href="javascript:void(0)">기프트 추천</a></h4>
-                                                    <!-- 3차 -->
-                                                    <ul>
-                                                        <li><a href="javascript:void(0)">여성용</a></li>
-                                                        <li><a href="javascript:void(0)">남성용</a></li>
-                                                    </ul>
+                                                    <h4><a href="javascript:void(0)">여성용 기프트 추천</a></h4>
                                                 </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">남성용 기프트 추천</a></h4>
+                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -448,17 +451,25 @@
                                             <ul class="inner">
                                                 <!-- 2차 -->
                                                 <li>
-                                                    <h4><a href="javascript:void(0)">세일</a></h4>
-                                                    <!-- 3차 -->
-                                                    <ul>
-                                                        <li><a href="javascript:void(0)">메이크업</a></li>
-                                                        <li><a href="javascript:void(0)">스킨케어</a></li>
-                                                        <li><a href="javascript:void(0)">헤어</a></li>
-                                                        <li><a href="javascript:void(0)">도구 & 브러시</a></li>
-                                                        <li><a href="javascript:void(0)">향수</a></li>
-                                                        <li><a href="javascript:void(0)">배스 & 바디</a></li>
-                                                        <li><a href="javascript:void(0)">기프트</a></li>
-                                                    </ul>
+                                                    <h4><a href="javascript:void(0)">메이크업</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">스킨케어</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">헤어</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">도구 & 브러시</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">향수</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">배스 & 바디</a></h4>
+                                                </li>
+                                                <li>
+                                                    <h4><a href="javascript:void(0)">기프트</a></h4>
                                                 </li>
                                             </ul>
                                         </div>
@@ -476,30 +487,12 @@
         <div class="section-wrap">
             <!-- main slider -->
             <section class="main-slider" class="section0">
-                <h2 class="hidden">swiper slider</h2>
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)"><img src="images/common/slide-nonfiction.jpg"
-                                    alt="nonfiction"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)"><img src="images/common/slide-maison.jpg" alt="maison"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)"><img src="images/common/slide-fenty.jpg" alt="fenty"></a>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                <div class="slider">
+                    <div><a href="javascript:void(0)"><img src="images/common/slide-nonfiction.jpg"
+                        alt="nonfiction"></a></div>
+                    <div><a href="javascript:void(0)"><img src="images/common/slide-maison.jpg" alt="maison"></a></div>
+                    <div><a href="javascript:void(0)"><img src="images/common/slide-fenty.jpg" alt="fenty"></a></div>
                 </div>
-            </section>
 
             <!-- 광고 banner 220px -->
             <section id="banner" class="section1">

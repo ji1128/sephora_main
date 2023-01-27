@@ -22,6 +22,7 @@ body {
     line-height: 1.4;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
+    box-sizing: border-box;
 }
 
 .container {
@@ -70,7 +71,6 @@ header{
     height: 160px;
     min-width: 1350px;
     float: left; /*밀림방지*/
-    background-color: antiquewhite;
     z-index: 10;
 }
 /* ------submenu------ */
@@ -143,30 +143,105 @@ input:last-child{
 }
 
 /* ------LOGO------ */
-header .inner{
-    width: 1350px;
-    height: 140px;
-    margin: auto;
+header div.inner{
+    width: 100%;
+    height: 120px;
+
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    align-items: flex-start;
 }
-header .inner h1{width: 100%;display: flex;justify-content: center;background-color: aquamarine;}
-header .inner h1 img{
+header div.inner h1{
+    width: 1350px;height: 75px;
+    margin: auto;
+    display: flex;
+    /* background-color: yellow; */
+    display: flex;justify-content: center;
+}
+header div.inner h1 img{
     width: 190px;
     height: auto;
-    margin: 12px 0;
+    padding: 20px 0 0;
 }
 
-/* ------mainmenu------ */
+/* ------main-menu------ */
 header .gnb-pc{
-    width: 100%;
-    background-color: cornsilk;
+    width: 1350px;
+    height: 45px;
+    margin: auto;
     position: relative;
 }
-header .gnb-pc nav ul{
+
+header .gnb-pc nav ul.main-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+header nav ul.main-menu li.item .item__name{
+    cursor: pointer;
+    height: 45px;
+    padding: 10px 45px;
+    font-size: 14px; /*main-menu 글자 크기*/
+    font-weight: 500;
+}
+header nav ul.main-menu li.item:hover .item__name{
+    color: #B50A03;
 }
 
-/* header .gnb-pc nav ul */
+/* ------sub-menu------ */
+header nav ul.main-menu li.item .item__contents{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+header nav ul.main-menu li.item:hover .item__contents{
+    display: block; /*호버하면 2차메뉴 보임*/
+}
+/* 1단 */
+header nav ul.main-menu li.item .item__contents .contents__menu{
+    width: 1350px;
+    height: auto;
+    height: 395px;
+    background-color: #fff;
+    /* position: relative; */
+    border-top: 1px solid #B50A03 ;
+    /* padding: 0 20px 0; */
+}
+header nav ul.main-menu li.item:nth-child(3) .item__contents .contents__menu, header nav ul.main-menu li.item:nth-child(5) .item__contents .contents__menu, header nav ul.main-menu li.item:nth-child(7) .item__contents .contents__menu{height: 260px;}
+header nav ul.main-menu li.item:nth-child(4) .item__contents .contents__menu{height: 310px;}
+header nav ul.main-menu li.item:nth-child(6) .item__contents .contents__menu, header nav ul.main-menu li.item:nth-child(8) .item__contents .contents__menu, header nav ul.main-menu li.item:last-child .item__contents .contents__menu{height: 95px;}
+
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner{
+    display: flex; /*가로방향으로 배치*/
+    padding: 30px 45px;
+    /* position: absolute;
+    top: 0; */
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner >li{
+    width: 220px;
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner >li h4{
+    padding-bottom: 10px;
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner >li h4 a{
+    font-weight: 500;
+    font-size: 15px;
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner >li h4 a:hover{
+    text-decoration: underline;
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li ul li{
+    padding: 2px 0;
+    font-size: 14px;
+}
+header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li ul li:hover{
+    font-weight: 500;
+    color: #B50A03;
+}
+
+
+
 
