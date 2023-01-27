@@ -19,21 +19,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!-- bxslider ( + jquery cdn ) -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- swiper slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <!-- scroll Magic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
         integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jquery cdn -->
-    
+
 
     <!-- javascript -->
     <script defer src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
 </head>
 
 <body>
@@ -489,10 +492,11 @@
             <section class="main-slider" class="section0">
                 <div class="slider">
                     <div><a href="javascript:void(0)"><img src="images/common/slide-nonfiction.jpg"
-                        alt="nonfiction"></a></div>
+                                alt="nonfiction"></a></div>
                     <div><a href="javascript:void(0)"><img src="images/common/slide-maison.jpg" alt="maison"></a></div>
                     <div><a href="javascript:void(0)"><img src="images/common/slide-fenty.jpg" alt="fenty"></a></div>
                 </div>
+            </section>
 
             <!-- 광고 banner 220px -->
             <section id="banner" class="section1">
@@ -598,143 +602,139 @@
 
             <!-- Most Loved Items - slide -->
             <section id="most-items" class="section4 items-slide">
-                <h2>#Most Loved Items</h2>
-                <div class="most-items__inner items__inner">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item1.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>메종 마르지엘라</strong></p>
-                                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                                        <span>89,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item2.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>로에베</strong></p>
-                                        <p>로에베 001 맨 오 드 퍼퓸</p>
-                                        <span>128,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item3.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>트렁크엘리펀트</strong></p>
-                                        <p>라라 레트로 휩 크림</p>
-                                        <span>78,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item4.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>논픽션</strong></p>
-                                        <p>논픽션 상탈크림 오드퍼퓸 30ML</p>
-                                        <span>59,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item5.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>리튼온워터</strong></p>
-                                        <p>뉴데이 리퀴드 핸드워시</p>
-                                        <span>25,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item6.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>포레오</strong></p>
-                                        <p>루나3 민감성 피부</p>
-                                        <span>250,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item7.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>아나스타샤 베버리 힐즈</strong></p>
-                                        <p>브로우 위즈</p>
-                                        <span>33,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item8.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>펜티 뷰티</strong></p>
-                                        <p>이즈 드롭 블러링 스킨 틴트</p>
-                                        <span>45,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item9.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>메종 마르지엘라</strong></p>
-                                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                                        <span>89,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="most-item-box">
-                                        <img src="images/items/most_item10.png" alt="most-items">
-                                    </div>
-                                    <div class="most-item-txt">
-                                        <p><strong>로에베</strong></p>
-                                        <p>로에베 001 맨 오 드 퍼퓸</p>
-                                        <span>128,000원</span>
-                                    </div>
-                                </a>
+                <div class="item-bg">
+                    <h2>#Most Loved Items</h2>
+                    <div class="most-items__inner items__inner">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item1.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>메종 마르지엘라</strong></p>
+                                            <p>레플리카 레이지 선데이 모닝 EDT</p>
+                                            <span>89,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item2.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>로에베</strong></p>
+                                            <p>로에베 001 맨 오 드 퍼퓸</p>
+                                            <span>128,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item3.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>트렁크엘리펀트</strong></p>
+                                            <p>라라 레트로 휩 크림</p>
+                                            <span>78,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item4.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>논픽션</strong></p>
+                                            <p>논픽션 상탈크림 오드퍼퓸 30ML</p>
+                                            <span>59,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item5.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>리튼온워터</strong></p>
+                                            <p>뉴데이 리퀴드 핸드워시</p>
+                                            <span>25,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item6.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>포레오</strong></p>
+                                            <p>루나3 민감성 피부</p>
+                                            <span>250,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item7.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>아나스타샤 베버리 힐즈</strong></p>
+                                            <p>브로우 위즈</p>
+                                            <span>33,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item8.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>펜티 뷰티</strong></p>
+                                            <p>이즈 드롭 블러링 스킨 틴트</p>
+                                            <span>45,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item9.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>메종 마르지엘라</strong></p>
+                                            <p>레플리카 레이지 선데이 모닝 EDT</p>
+                                            <span>89,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="most-item-box">
+                                            <img src="images/items/most_item10.png" alt="most-items">
+                                        </div>
+                                        <div class="most-item-txt item-txt">
+                                            <p><strong>로에베</strong></p>
+                                            <p>로에베 001 맨 오 드 퍼퓸</p>
+                                            <span>128,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-pagination"></div> -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </section>
@@ -793,18 +793,12 @@
                                     </div>
                                 </a>
                             </div>
-                            ...
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
         </div>
@@ -814,431 +808,426 @@
         <div class="section-wrap">
             <!-- Sephota Pick! - slide -->
             <section id="pick-items" class="section6 items-slide">
-                <h2>#Sephora Pick!</h2>
-                <div class="pick-items__inner items__inner">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item1.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>커리쉴</strong></p>
-                                        <p>루트 레미디 스칼프 트리트먼트</p>
-                                        <span>8,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item2.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>커리쉴</strong></p>
-                                        <p>퍼펙션 컬크림</p>
-                                        <span>25,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item3.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>커리쉴</strong></p>
-                                        <p>바바수오일</p>
-                                        <span>45,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item4.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>커리쉴</strong></p>
-                                        <p>모이스처 카밍 샴푸</p>
-                                        <span>21,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item5.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>커리쉴</strong></p>
-                                        <p>루트 레미디 스칼프 토닉</p>
-                                        <span>28,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item6.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>메종 마르지엘라 </strong></p>
-                                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                                        <span>89,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item7.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>엔시피</strong></p>
-                                        <p>301 자스민 & 샌달우드</p>
-                                        <span>108,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item8.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>반클리프 아펠</strong></p>
-                                        <p>반클리프 아펠 꼴렉씨옹 네롤리 아마라 EDP 75ml</p>
-                                        <span>198,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item9.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>로에베</strong></p>
-                                        <p>로에베 001 맨 오 드 뚜왈렛</p>
-                                        <span>120,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="pick-item-box">
-                                        <img src="images/items/pick_item10.png" alt="pick-items">
-                                    </div>
-                                    <div class="pick-item-txt">
-                                        <p><strong>반클리프 아펠</strong></p>
-                                        <p>반클리프 아펠 꼴렉씨옹 가드니아 페탈 EDP 75ml</p>
-                                        <span>198,000원</span>
-                                    </div>
-                                </a>
+                <div class="item-bg">
+                    <h2>#Sephora Pick!</h2>
+                    <div class="pick-items__inner items__inner">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item1.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>커리쉴</strong></p>
+                                            <p>루트 레미디 스칼프 트리트먼트</p>
+                                            <span>8,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item2.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>커리쉴</strong></p>
+                                            <p>퍼펙션 컬크림</p>
+                                            <span>25,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item3.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>커리쉴</strong></p>
+                                            <p>바바수오일</p>
+                                            <span>45,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item4.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>커리쉴</strong></p>
+                                            <p>모이스처 카밍 샴푸</p>
+                                            <span>21,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item5.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>커리쉴</strong></p>
+                                            <p>루트 레미디 스칼프 토닉</p>
+                                            <span>28,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item6.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>메종 마르지엘라 </strong></p>
+                                            <p>레플리카 레이지 선데이 모닝 EDT</p>
+                                            <span>89,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item7.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>엔시피</strong></p>
+                                            <p>301 자스민 & 샌달우드</p>
+                                            <span>108,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item8.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>반클리프 아펠</strong></p>
+                                            <p>반클리프 아펠 꼴렉씨옹 네롤리 아마라 EDP 75ml</p>
+                                            <span>198,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item9.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>로에베</strong></p>
+                                            <p>로에베 001 맨 오 드 뚜왈렛</p>
+                                            <span>120,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="pick-item-box">
+                                            <img src="images/items/pick_item10.png" alt="pick-items">
+                                        </div>
+                                        <div class="pick-item-txt item-txt">
+                                            <p><strong>반클리프 아펠</strong></p>
+                                            <p>반클리프 아펠 꼴렉씨옹 가드니아 페탈 EDP 75ml</p>
+                                            <span>198,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </section>
 
             <!-- Only at Sephora - slide -->
             <section id="only-items" class="section7 items-slide">
-                <h2>#Only at SEPHORA</h2>
-                <div class="only-items__inner items__inner">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item1.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>원/사이즈</strong></p>
-                                        <p>고 오프 메이크업 리무버 와이프스</p>
-                                        <span>12,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item2.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>원/사이즈</strong></p>
-                                        <p>비저너리 아이섀도우 팔레트</p>
-                                        <span>60,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item3.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>펜티 뷰티</strong></p>
-                                        <p>레스팅 피치 페이스 크림 블러쉬 & 미니 글로스 밤 크림 듀오</p>
-                                        <span>36,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item4.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>누드스틱스</strong></p>
-                                        <p>헤븐 & 어스 키트</p>
-                                        <span>105,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item5.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>타르트</strong></p>
-                                        <p>마라쿠자 틴티드 하이드레이터</p>
-                                        <span>40,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item6.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>펜티 뷰티</strong></p>
-                                        <p>다이아몬드 밤 트리플 드 립 올 오버 다이아몬드 베일 팔레트</p>
-                                        <span>59,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item7.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>타르트</strong></p>
-                                        <p>비지 갈 골 아이 & 치크 팔레트</p>
-                                        <span>38,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item8.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>누드스틱스</strong></p>
-                                        <p>마그네틱 립 플러쉬 페인트</p>
-                                        <span>38,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item9.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>누드스틱스</strong></p>
-                                        <p>크림 립+치크 펜슬</p>
-                                        <span>36,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="only-item-box">
-                                        <img src="images/items/only_item10.png" alt="only-items">
-                                    </div>
-                                    <div class="only-item-txt">
-                                        <p><strong>누드스틱스</strong></p>
-                                        <p>누디스 틴티드 블러 스틱</p>
-                                        <span>42,000원</span>
-                                    </div>
-                                </a>
+                <div class="item-bg">
+                    <h2>#Only at SEPHORA</h2>
+                    <div class="only-items__inner items__inner">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item1.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>원/사이즈</strong></p>
+                                            <p>고 오프 메이크업 리무버 와이프스</p>
+                                            <span>12,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item2.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>원/사이즈</strong></p>
+                                            <p>비저너리 아이섀도우 팔레트</p>
+                                            <span>60,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item3.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>펜티 뷰티</strong></p>
+                                            <p>레스팅 피치 페이스 크림 블러쉬 & 미니 글로스 밤 크림 듀오</p>
+                                            <span>36,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item4.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>누드스틱스</strong></p>
+                                            <p>헤븐 & 어스 키트</p>
+                                            <span>105,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item5.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>타르트</strong></p>
+                                            <p>마라쿠자 틴티드 하이드레이터</p>
+                                            <span>40,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item6.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>펜티 뷰티</strong></p>
+                                            <p>다이아몬드 밤 트리플 드 립 올 오버 다이아몬드 베일 팔레트</p>
+                                            <span>59,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item7.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>타르트</strong></p>
+                                            <p>비지 갈 골 아이 & 치크 팔레트</p>
+                                            <span>38,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item8.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>누드스틱스</strong></p>
+                                            <p>마그네틱 립 플러쉬 페인트</p>
+                                            <span>38,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item9.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>누드스틱스</strong></p>
+                                            <p>크림 립+치크 펜슬</p>
+                                            <span>36,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="only-item-box">
+                                            <img src="images/items/only_item10.png" alt="only-items">
+                                        </div>
+                                        <div class="only-item-txt item-txt">
+                                            <p><strong>누드스틱스</strong></p>
+                                            <p>누디스 틴티드 블러 스틱</p>
+                                            <span>42,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </section>
 
             <!-- Perfumes - slide -->
             <section id="perfume-items" class="section8 items-slide">
-                <h2>#Perfumes</h2>
-                <div class="perfume-items__inner items__inner">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume01.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>입생로랑</strong></p>
-                                        <p>리브르 오 드 뚜왈렛</p>
-                                        <span>89,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume02.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>로에베</strong></p>
-                                        <p>001 우먼 오 드 퍼퓸</p>
-                                        <span>109,000원
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume03.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>프레쉬</strong></p>
-                                        <p>프레쉬 라이프 오 드 퍼퓸</p>
-                                        <span>82,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume04.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>메종 마르지엘라</strong></p>
-                                        <p>레플리카 재즈 클럽 EDT</p>
-                                        <span>98,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume05.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>에이딕트</strong></p>
-                                        <p>오드퍼퓸 블랑드블룸</p>
-                                        <span>59,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume06.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>티파니 앤 코 </strong></p>
-                                        <p>티파니 앤 러브 포 허 오 드 퍼퓸 50ml</p>
-                                        <span>178,000원
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume07.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>반클리프 아펠</strong></p>
-                                        <p>반클리프 아펠 꼴렉씨옹 문라이트 패출리 EDP</p>
-                                        <span>198,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume08.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>메종 마르지엘라</strong></p>
-                                        <p>레플리카 레이지 선데이 모닝 EDT</p>
-                                        <span>98,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume09.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>로에베</strong></p>
-                                        <p>001 맨 오 드 퍼퓸</p>
-                                        <span>128,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">
-                                    <div class="perfume-item-box">
-                                        <img src="images/items/items_perfume/item_perfume10.jpg" alt="perfume-items">
-                                    </div>
-                                    <div class="perfume-item-txt">
-                                        <p><strong>겐조</strong></p>
-                                        <p>라 컬렉션 겐조 메모리 푸르드 마챠 오 드 퍼퓸</p>
-                                        <span>129,000원</span>
-                                    </div>
-                                </a>
+                <div class="item-bg">
+                    <h2>#Perfumes</h2>
+                    <div class="perfume-items__inner items__inner">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume01.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>입생로랑</strong></p>
+                                            <p>리브르 오 드 뚜왈렛</p>
+                                            <span>89,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume02.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>로에베</strong></p>
+                                            <p>001 우먼 오 드 퍼퓸</p>
+                                            <span>109,000원
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume03.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>프레쉬</strong></p>
+                                            <p>프레쉬 라이프 오 드 퍼퓸</p>
+                                            <span>82,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume04.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>메종 마르지엘라</strong></p>
+                                            <p>레플리카 재즈 클럽 EDT</p>
+                                            <span>98,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume05.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>에이딕트</strong></p>
+                                            <p>오드퍼퓸 블랑드블룸</p>
+                                            <span>59,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume06.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>티파니 앤 코 </strong></p>
+                                            <p>티파니 앤 러브 포 허 오 드 퍼퓸 50ml</p>
+                                            <span>178,000원
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume07.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>반클리프 아펠</strong></p>
+                                            <p>반클리프 아펠 꼴렉씨옹 문라이트 패출리 EDP</p>
+                                            <span>198,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume08.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>메종 마르지엘라</strong></p>
+                                            <p>레플리카 레이지 선데이 모닝 EDT</p>
+                                            <span>98,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume09.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>로에베</strong></p>
+                                            <p>001 맨 오 드 퍼퓸</p>
+                                            <span>128,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="perfume-item-box">
+                                            <img src="images/items/items_perfume/item_perfume10.jpg"
+                                                alt="perfume-items">
+                                        </div>
+                                        <div class="perfume-item-txt item-txt">
+                                            <p><strong>겐조</strong></p>
+                                            <p>라 컬렉션 겐조 메모리 푸르드 마챠 오 드 퍼퓸</p>
+                                            <span>129,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </section>

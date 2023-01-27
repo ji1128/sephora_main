@@ -414,6 +414,7 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     font-weight: 700;
     padding-top: 10px;
     transition: all 0.5s ease-in-out;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .new-container div.new:hover a p:last-child{color: #B50A03;}
 .new-container div.new2 a p:last-child{
@@ -429,35 +430,23 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     color: #B50A03;
 }
 
-/* .new-container div.new a span{
-    font-family: aGothic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 46px;
-    border: 1px solid #B50A03;
-    font-size: 16px;
-    color: #fff;
-    background: #B50A03;
-    transition: all 0.3s ease-in-out;
-
-    position: absolute;
-    left: 50%;
-    margin-left: -85px;
-    bottom: 13px;
-}
-.new-container div.new a span:hover{
-    opacity: 0.8;
-} */
-
 
 /* -------Most Loved Items------- */
 .items-slide{
     width: 100%;
     height: auto;
-    background-color: #f1f1f1;
-    margin: 20px 0 0 0;
+    margin: 50px 0 90px 0; /* items 세로 간격 */
+    /* background-color: #f1f1f1; */
+}
+#perfume-items.items-slide{
+    margin: 50px 0 140px 0;
+}
+
+.items-slide .item-bg{
+    width: 1350px;
+    height: 430px;
+    margin: auto;
+    display: block;
 }
 .items-slide h2{
     text-align: center;
@@ -473,18 +462,237 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     width: 60px;
     height: 0.8px;
     background-color: #333;
-    margin: 12px auto 0;
+    margin: 12px auto 10px;
 }
 
-.items-slide >div{
-    width: 1350px;
+.items-slide .items__inner{
+    position: relative;
+}
+.items-slide .items__inner .swiper{
+    width: 1210px;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.items-slide .items__inner .swiper .item-txt{
+    padding-left: 1px;
+}
+.items-slide .items__inner .swiper p{
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.items-slide .items__inner .swiper p:first-child{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 0 0 0;
+}
+.items-slide .items__inner .swiper span{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 0 0 0;
+    letter-spacing: 1px;
+    /* font-family: aGothic; */
+}
+
+/* navigation */
+.items-slide .swiper-button-prev,
+.items-slide .swiper-button-next{
+    width: 55px;
+    height: 55px;
+    outline: none;
+    background-color: #7B0B10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     margin: auto;
+    z-index: 2;
+    cursor: pointer;
+
+    /* 화살표 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-slide .swiper-button-prev{
+    left: -8px;
+    background: url(../images/icon/item-prev.png) no-repeat center;
+    object-fit:cover;
+}
+.items-slide .swiper-button-next{
+    right: -8px;
+    background: url(../images/icon/item-next.png) no-repeat center;
+    object-fit:cover;
+}
+.items-slide .swiper-button-prev:hover{
+    background: url(../images/icon/item-prev-active.png) no-repeat center;
+}
+.items-slide .swiper-button-next:hover{
+    background: url(../images/icon/item-next-active.png) no-repeat center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* ===============SNS============== */
+#sns{
+    width: 100%;
+    height: auto;
+    /* 520 */
+    background-color: #7B0B10;
+    padding: 90px 0 130px;
+}
+#sns p{
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-family: aGothic;
+    font-size: 13px;
+}
+#sns h3{
+    text-align: center;
+    font-family : roxie;
+    font-size: 32px;
+    font-weight: lighter;
+    padding: 7px 0 30px;
+    color: #fff;
+}
+.sns-box{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.sns-box div{
+    /* width: 232px;
+    height: auto; */
+    margin: 0 5px;
+}
+.sns-box div:first-child{
+    margin: 0 5px 0 2px;
+}
+.sns-box > div a:hover{
+    filter:  grayscale(60%);
+}
+.sns-box > div a img{
+    width: 100%;
+}
+
+
+/* ==============footer=================== */
+footer{
+    clear: both;
+    width: 100%;
+    height: 370px;
+    background-color: #030102;
+    font-family: aGothic;
     display: block;
 }
-.items-slide >div.items__inner .swiper-slide{
-    width: 80%;
+#footer-box{
+    width: 1500px;
+    height: 370px;
     margin: auto;
+    padding: 0 40px 0 60px;
+}
+#footer-box > div{float: left;}
+#left-footer{
+    /* float: left; */
+    width: 800px;
+    height: 370px;
+    padding: 40px 0 0 70px;
+    position: relative;
+}
+#left-footer::after{
+            /* 박스 사이 선 */
+            content: "";
+            display: block;
+            width: 1px;
+            height: 240px;
+            background-color: #ccc;
+            position: absolute;
+            top: 55px;
+            right: 0px;
+}
+.footer-box h5{
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+#left-footer > div nav ul li a{
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 200;
+}
+#left-footer > div nav ul li a:hover{text-decoration: underline;}
+#left-footer > div p{
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 100;
 }
 
+#left-footer > div{
+    width: 170px;
+    height: 170px;
+    float: left;
+    color: #fff;
+}
+#left-footer > div#customer{
+    height: 250px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+#left-footer > div#company{
+    position: absolute;
+    top: 70px;
+    left: 340px;
+}
+#left-footer > div#link{
+    height: 130px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+#left-footer > div#sns-link{
+    height: 100px;
+    position: absolute;
+    top: 230px;
+    right: 30px;
+}
+#left-footer > div#sns-link ul li{
+    float: left;
+    margin: 0 8px 0 0;
+}
 
+/* right */
+#right-footer{
+    /* float: left; */
+    width: 600px;
+    height: 370px;
+    padding: 70px 0 0 90px;
+    font-family: aGothic;
+}
+#right-footer h4{
+    width: 200px;
+    margin-bottom: 20px;
+}
+#right-footer h4 img{
+    width: 100%;
+}
 
+#right-footer address{
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.5;
+    color: #fff;
+}
