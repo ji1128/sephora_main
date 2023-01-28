@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    // $('header div.gnb-pc nav ul li.item .item__name').hover(function () {
+    //     $(this).find('.item__contents').stop().slideDown();
+    // }, function () {
+    //     $(this).find('.item__contents').stop().slideUp();
+    // })
+
     // bxslider
     $('.slider').bxSlider({
         //슬라이드종류
@@ -42,11 +48,11 @@ $(document).ready(function () {
         },
 
         navigation: { // 버튼
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".items-slide swiper-button-next",
+            prevEl: ".items-slide .swiper-button-prev",
         },
         pagination: { // 페이징 설정
-            el: '.swiper-pagination',
+            el: '.items-slide .swiper-pagination',
             clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
         },
         breakpoints: { //반응형 조건 속성
@@ -55,6 +61,45 @@ $(document).ready(function () {
             },
         }
     });
+
+    //exclusive swiper slider
+    new Swiper('.exclusive .swiper', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2, //보여질 슬라이드 갯수
+        slidesPerGroup: 1, //슬라이드 넘길 때 이동 갯수
+        spaceBetween: 0, //슬라이드 사이 여백
+        centeredSlides: true, //첫번째로 나오는 1번 슬라이드가 가운데에 보이기
+        observer: true, //display: none이 되는 컴포넌트 안에서 Swiper를 사용하는 경우에 필요
+        observeParents: true, // display: none이 되는 컴포넌트 안에서 Swiper를 사용하는 경우에
+        speed: 1000,
+        autoplay: {
+            delay: 2000,
+            //자동으로 넘어가는 것을 지연시킴 (천천히 넘어가게 함)
+            disableOnInteraction: false,
+        },
+        pagination: {
+            //pager
+            el: ".exclusive .swiper-pagination",
+            clickable: true //페이저 클릭해서 제어 가능 여부
+        },
+        navigation: {
+            prevEl: ".exclusive .swiper-button-prev",
+            nextEl: ".exclusive .swiper-button-next"
+        },
+    });
+
+    // slider에 마우스 hover 시 멈추게 함
+    $(".swiper").each(function(elem, target){
+        var swp = target.swiper;
+        $(this).hover(function() {
+            swp.autoplay.stop();
+        }, function() {
+            swp.autoplay.start();
+        });
+    });
+    
+
 
     $('.sns-box').slick({
         slide: 'div',

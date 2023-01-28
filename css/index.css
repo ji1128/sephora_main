@@ -211,7 +211,8 @@ header nav ul.main-menu li.item .item__contents{
     transition: all 0.4s ease-in-out;
 }
 header nav ul.main-menu li.item:hover .item__contents{
-    display: block; /*호버하면 2차메뉴 보임*/
+    /*호버하면 2차메뉴 보임*/
+    display: block;
 }
 /* 1단 */
 header nav ul.main-menu li.item .item__contents .contents__menu{
@@ -328,7 +329,7 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
 }
 
 
-/* ------shop bu brands------ */
+/* ------shop by brands------ */
 #brands{
     clear: both;
     width: 100%;
@@ -361,7 +362,9 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
 
 
 /* ------New at Sephora------ */
-#new-items{width: 100%;}
+#new-items{width: 100%;
+    margin-bottom: 45px;
+}
 .new-container{
     width: 1350px;
     margin: auto;
@@ -435,11 +438,11 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
 .items-slide{
     width: 100%;
     height: auto;
-    margin: 50px 0 90px 0; /* items 세로 간격 */
+    margin: 20px 0; /* items 세로 간격 */
     /* background-color: #f1f1f1; */
 }
 #perfume-items.items-slide{
-    margin: 50px 0 140px 0;
+    margin: 20px 0 70px 0;
 }
 
 .items-slide .item-bg{
@@ -453,16 +456,25 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     font-family : roxie;
     font-size: 32px;
     font-weight: normal;
-    padding: 30px 0;
+    padding: 30px 0 20px;
 }
-.items-slide h2::after{
-    /* ---글씨 하단 선--- */
+/* ---글씨 하단 선--- */
+/* .items-slide h2::after{
     content: "";
     display: block;
     width: 60px;
     height: 0.8px;
     background-color: #333;
     margin: 12px auto 10px;
+} */
+/* 이미지 hover 시 위로 8px 이동 */
+.items-slide .items__inner .swiper img{
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.items-slide .items__inner .swiper img:hover{
+    /* transform: scale(1.2); */
+    transform: translateY(-8px);
 }
 
 .items-slide .items__inner{
@@ -483,7 +495,7 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
 .items-slide .items__inner .swiper p:first-child{
     font-size: 13px;
     font-weight: 500;
-    padding: 5px 0 0 0;
+    padding: 8px 0 0 0;
 }
 .items-slide .items__inner .swiper span{
     display: inline-block;
@@ -500,7 +512,7 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     width: 55px;
     height: 55px;
     outline: none;
-    background-color: #7B0B10;
+    /* background-color: #7B0B10; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -535,12 +547,97 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
 }
 
 
+/* =============exclusive============== */
+.exclusive{
+    width: 100%;
+    min-width: 1350px;
+    height: auto;
+    background-color: #f1f1f1;
+    position: relative;
+    padding-bottom: 125px;
+    margin: 35px 0 30px 0;
+}
+.exclusive #exclusive-items{
+    padding: 30px 0;
+}
+.exclusive #exclusive-items h2{
+    font-family : roxie;
+    font-size: 45px;
+    text-align: center;
+    font-weight: normal;
+    padding: 30px 0 45px;
+    letter-spacing: 1px; /*자간*/
+}
+.exclusive .swiper-slide img{
+    width: 850px;
+    margin: auto;
+}
+
+.exclusive .swiper {overflow: visible;}
+.exclusive .swiper-slide {filter: brightness(0.3); transition: all 0.3s ease-in-out;}
+.exclusive .swiper-slide-active{filter: brightness(1);}
+.exclusive .swiper-slide-active img{
+    width: 950px;
+    position: absolute;
+    top: -25px;
+    transition: all 0.3s ease-in-out;
+}
+/* .exclusive .swiper-slide-active img:hover{
+    filter: opacity(0.8);
+} */
 
 
+/* navigation */
+.exclusive .exclusive-inner{width:1350px; position: relative;}
+.exclusive .swiper-button-prev,
+.exclusive .swiper-button-next{
+    width: 70px;
+    height: 70px;
+    outline: none;
+    /* background-color: #7B0B10; */
+    position: absolute;
+    top: 390px;
 
+    margin: auto;
+    z-index: 2;
+    cursor: pointer;
 
+    /* 화살표 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.exclusive .swiper-button-prev{
+    left: 340px;
+    background: url(../images/icon/exclusive-prev.png) no-repeat center;
+    object-fit:cover;
+}
+.exclusive .swiper-button-next{
+    right: 340px;
+    background: url(../images/icon/exclusive-next.png) no-repeat center;
+    object-fit:cover;
+}
+.exclusive .swiper-button-prev:hover{
+    background: url(../images/icon/exclusive-prev-active.png) no-repeat center;
+}
+.exclusive .swiper-button-next:hover{
+    background: url(../images/icon/exclusive-next-active.png) no-repeat center;
+}
 
+/* pager */
+.exclusive .swiper-pagination {
+    position: absolute;
+    bottom: 75px !important;
 
+}
+.exclusive .swiper-pagination-bullet {
+    background-color: #B50A03;
+    margin: 0 2px !important;
+    width: 50px;
+    height: 3px;
+    border-radius: 0;
+}
 
 /* ===============SNS============== */
 #sns{
