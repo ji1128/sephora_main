@@ -90,15 +90,15 @@ $(document).ready(function () {
     });
 
     // slider에 마우스 hover 시 멈추게 함
-    $(".swiper").each(function(elem, target){
+    $(".swiper").each(function (elem, target) {
         var swp = target.swiper;
-        $(this).hover(function() {
+        $(this).hover(function () {
             swp.autoplay.stop();
-        }, function() {
+        }, function () {
             swp.autoplay.start();
         });
     });
-    
+
 
 
     $('.sns-box').slick({
@@ -118,9 +118,22 @@ $(document).ready(function () {
         nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
 
         draggable: false,
-
-
-
     });
+
+    // skroll-spy -----------------------------
+    //Masgic Scroll---------------------
+    const spyEls = document.querySelectorAll("section.scroll-spy");
+    //forEach -> 배열함수
+    spyEls.forEach(function (spyEl) {
+        new ScrollMagic.Scene({
+                triggerElement: spyEl, //보여질 부분 감지할 요소 지정
+                triggerHook: 0.8, //0.8초 동안 훅이 실행됨
+            })
+            //토글 할 요소 생성 및 제거
+            //.setClassToggle(토글 할 요소, "넣었다 뺐다 할 class 이름 생성")
+            .setClassToggle(spyEl, "show")
+            .addTo(new ScrollMagic.Controller());
+    });
+
 
 })
