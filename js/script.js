@@ -40,7 +40,7 @@ $(document).ready(function () {
         slidesPerView: 5, //한 번에 보여줄 슬라이드 개수
         slidesPerGroup: 5, //슬라이드 넘길 때 이동 갯수
         spaceBetween: 20, //슬라이드와 슬라이드 사이 간격
-        allowTouchMove: false, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+        allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
         speed: 1000,
         autoplay: { //자동슬라이드 (false-비활성화)
             delay: 3000, // 시간 설정
