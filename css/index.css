@@ -583,6 +583,7 @@ header nav ul.main-menu li.item .item__contents .contents__menu > ul.inner > li 
     position: relative;
     padding-bottom: 125px;
     margin: 35px 0 30px 0;
+    overflow: hidden;
 }
 .exclusive #exclusive-items{
     padding: 30px 0;

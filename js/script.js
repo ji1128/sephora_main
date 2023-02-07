@@ -41,14 +41,14 @@ $(document).ready(function () {
         slidesPerGroup: 5, //슬라이드 넘길 때 이동 갯수
         spaceBetween: 20, //슬라이드와 슬라이드 사이 간격
         allowTouchMove: false, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
-        speed: 900,
+        speed: 1000,
         autoplay: { //자동슬라이드 (false-비활성화)
             delay: 3000, // 시간 설정
             disableOnInteraction: false, // false-스와이프 후 자동 재생
         },
 
         navigation: { // 버튼
-            nextEl: ".items-slide swiper-button-next",
+            nextEl: ".items-slide .swiper-button-next",
             prevEl: ".items-slide .swiper-button-prev",
         },
         pagination: { // 페이징 설정
